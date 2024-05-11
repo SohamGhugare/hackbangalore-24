@@ -29,10 +29,17 @@ type Startup struct {
 	Description        string              `bson:"description" json:"description"`
 	Tags               map[string][]string `bson:"tags" json:"tags"`
 	Team               []TeamMember        `bson:"team" json:"team"`
-	Milestones         []Milestone         `bson:"milestones" json:"milestones"`
-	Resources          Resources           `bson:"resources" json:"resources"`
+	Milestones         []Milestone         `bson:"milestones,omitempty" json:"milestones,omitempty"`
+	Activities         []Activity          `bson:"activities,omitempty" json:"activities,omitempty"`
+	Resources          Resources           `bson:"resources,omitempty" json:"resources,omitempty"`
 	Verified           bool                `bson:"verified" json:"verified"`
 	CreatedAt          time.Time           `bson:"created_at" json:"created_at"`
+}
+
+type Activity struct {
+	Date        time.Time `bson:"date" json:"date"`
+	Description string    `bson:"description" json:"description"`
+	Type        string    `bson:"type" json:"type"`
 }
 
 type TeamMember struct {
@@ -74,6 +81,17 @@ func (Startup) New(startupSignup StartupSignup) (Startup, error) {
 	_, err := coll.InsertOne(context.TODO(), startup)
 
 	return startup, err
+}
+
+func (Startup) AddActivity(name string, activity Activity) error {
+	coll := database.DatabaseClient.Database("hackbangalore").Collection("startups")
+	_, err := coll.UpdateOne(context.TODO(), map[string]string{"name": name}, map[string]interface{}{
+		"$push": map[string]interface{}{
+			"activities": activity,
+		},
+	})
+
+	return err
 }
 
 func (Startup) GetAll() ([]Startup, error) {
