@@ -27,10 +27,11 @@ type Investor struct {
 // new method for InvestorSignup
 func (Investor) New(investorSignup InvestorSignup) (Investor, error) {
 	investor := Investor{
-		Name:     investorSignup.Name,
-		Email:    investorSignup.Email,
-		Password: investorSignup.Password,
-		Tags:     investorSignup.Tags,
+		Name:      investorSignup.Name,
+		Email:     investorSignup.Email,
+		Password:  investorSignup.Password,
+		Tags:      investorSignup.Tags,
+		CreatedAt: time.Now(),
 	}
 
 	coll := database.DatabaseClient.Database("hackbangalore").Collection("investors")
