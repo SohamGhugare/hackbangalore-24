@@ -16,6 +16,16 @@ const FormPage = ({ currentPage, setCurrentPage, formData, setFormData }) => {
     />
   ));
   const sendData = async () => {
+    const newFormData = {
+      fullName: formData.fullName,
+      email: formData.email,
+      password: formData.password,
+      tags: formData.tags.map((tag) => {
+        const { title, ans } = tag;
+        return { [title]: ans };
+      }),
+    };
+
     const response = await fetch(
       `http://127.0.0.1:8080/api/v1/investor/signup`,
       {
@@ -23,7 +33,7 @@ const FormPage = ({ currentPage, setCurrentPage, formData, setFormData }) => {
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify(formData),
+        body: JSON.stringify(newFormData),
       },
     );
     const data = await response.json();
