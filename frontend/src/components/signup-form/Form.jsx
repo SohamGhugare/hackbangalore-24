@@ -2,11 +2,6 @@ import FormInput from "../ui/FormInput";
 import Label from "../ui/Label";
 
 const Form = ({ formData, setFormData }) => {
-  const handleEmailChange = (event) => {
-    if (isValidEmail(event.target.value)) {
-      setFormData({ ...formData, email: event.target.value });
-    }
-  };
   const handlePassChange = (event) => {
     setFormData({ ...formData, password: event.target.value });
   };
@@ -33,7 +28,9 @@ const Form = ({ formData, setFormData }) => {
             type={"email"}
             id="email"
             value={formData.email}
-            onChange={handleEmailChange}
+            onChange={(e) => {
+              setFormData({ ...formData, email: e.target.value });
+            }}
           />
         </div>
       </div>
@@ -50,7 +47,7 @@ const Form = ({ formData, setFormData }) => {
         <div>
           <Label label={"Confirm Password"} htmlFor={"cpass"} />
           <FormInput
-            type={"passsword"}
+            type={"password"}
             id="cpass"
             value={formData.cpass}
             onChange={handleCPassChange}

@@ -10,10 +10,10 @@ const Navbar = () => {
         <Link href={"/"}>Features</Link>
         <Link href={"/"}>Profile</Link>
       </div>
-      <div>
+      {/* <div> 
         <Link href={"/"}>Login</Link>
         <Button variant={"secondary"} text="Sign Up"/>
-      </div>
+      </div> */}
     </nav>
   );
 };
