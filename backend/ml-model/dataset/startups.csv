@@ -1,0 +1,51 @@
+id,social_impact,environmental_impact,stage,risk_tolerance,investment_duration
+1,Education,Renewable Energy,Idea Phase,2,3
+2,Healthcare,Sustainable Agriculture,Prototype/MVP,1,1
+3,Poverty Alleviation,Clean Technology,Early Stage,3,2
+4,Gender Equality,Biodiversity Conservation,Growth Stage,2,3
+5,Social Justice and Equality,Climate Change Mitigation and Adaptation,Mature Stage,1,1
+6,Community Development,Water and Sanitation,Idea Phase,3,2
+7,Other,Circular Economy,Prototype/MVP,2,3
+8,Education,Renewable Energy,Early Stage,1,1
+9,Healthcare,Sustainable Agriculture,Growth Stage,3,2
+10,Poverty Alleviation,Clean Technology,Mature Stage,2,3
+11,Education,Renewable Energy,Idea Phase,3,1
+12,Healthcare,Sustainable Agriculture,Prototype/MVP,2,2
+13,Poverty Alleviation,Clean Technology,Early Stage,1,3
+14,Gender Equality,Biodiversity Conservation,Growth Stage,3,1
+15,Social Justice and Equality,Climate Change Mitigation and Adaptation,Mature Stage,2,2
+16,Community Development,Water and Sanitation,Idea Phase,1,3
+17,Other,Circular Economy,Prototype/MVP,3,1
+18,Education,Renewable Energy,Early Stage,2,2
+19,Healthcare,Sustainable Agriculture,Growth Stage,1,3
+20,Poverty Alleviation,Clean Technology,Mature Stage,3,1
+21,Healthcare,Clean Technology,Idea Phase,2,3
+22,Poverty Alleviation,Biodiversity Conservation,Prototype/MVP,1,1
+23,Gender Equality,Climate Change Mitigation and Adaptation,Early Stage,3,2
+24,Social Justice and Equality,Water and Sanitation,Growth Stage,2,3
+25,Community Development,Circular Economy,Mature Stage,1,1
+26,Other,Renewable Energy,Idea Phase,3,2
+27,Education,Sustainable Agriculture,Prototype/MVP,2,3
+28,Healthcare,Clean Technology,Early Stage,1,1
+29,Poverty Alleviation,Biodiversity Conservation,Growth Stage,3,2
+30,Gender Equality,Climate Change Mitigation and Adaptation,Mature Stage,2,3
+31,Social Justice and Equality,Water and Sanitation,Idea Phase,1,1
+32,Community Development,Circular Economy,Prototype/MVP,3,2
+33,Other,Renewable Energy,Early Stage,2,3
+34,Education,Sustainable Agriculture,Growth Stage,1,1
+35,Healthcare,Clean Technology,Mature Stage,3,2
+36,Poverty Alleviation,Biodiversity Conservation,Idea Phase,2,3
+37,Gender Equality,Climate Change Mitigation and Adaptation,Prototype/MVP,1,1
+38,Social Justice and Equality,Water and Sanitation,Early Stage,3,2
+39,Community Development,Circular Economy,Growth Stage,2,3
+40,Other,Renewable Energy,Mature Stage,1,1
+41,Education,Sustainable Agriculture,Idea Phase,3,2
+42,Healthcare,Clean Technology,Prototype/MVP,2,3
+43,Poverty Alleviation,Biodiversity Conservation,Early Stage,1,1
+44,Gender Equality,Climate Change Mitigation and Adaptation,Growth Stage,3,2
+45,Social Justice and Equality,Water and Sanitation,Mature Stage,2,3
+46,Community Development,Circular Economy,Idea Phase,1,1
+47,Other,Renewable Energy,Prototype/MVP,3,2
+48,Education,Sustainable Agriculture,Early Stage,2,3
+49,Healthcare,Clean Technology,Growth Stage,1,1
+50,Poverty Alleviation,Biodiversity Conservation,Mature Stage,3,2
