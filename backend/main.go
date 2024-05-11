@@ -6,17 +6,14 @@ import (
 	"github.com/SohamGhugare/hackbangalore-24/database"
 	"github.com/SohamGhugare/hackbangalore-24/initializers"
 	"github.com/gin-gonic/gin"
-	"go.mongodb.org/mongo-driver/mongo"
 )
-
-var DatabaseClient *mongo.Client
 
 func init() {
 	// loading dotenv file
 	initializers.LoadEnv()
 
 	// connecting to database
-	DatabaseClient = database.ConnectDB()
+	database.ConnectDB()
 }
 
 func main() {

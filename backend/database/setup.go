@@ -9,6 +9,8 @@ import (
 	"go.mongodb.org/mongo-driver/mongo/options"
 )
 
+var DatabaseClient *mongo.Client
+
 func ConnectDB() *mongo.Client {
 	uri := os.Getenv("MONGO_URI")
 	if uri == "" {
@@ -26,5 +28,5 @@ func ConnectDB() *mongo.Client {
 		}
 	}()
 
-	return client
+	DatabaseClient = client
 }
