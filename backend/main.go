@@ -26,7 +26,9 @@ func setupRoutes(r *gin.Engine) {
 	r.POST("api/v1/investor/login", handlers.InvestorLoginHandler)
 
 	// CORS
-	r.Use(cors.Default())
+	config := cors.DefaultConfig()
+  	config.AllowOrigins = []string{"http://127.0.0.1:3000"}
+   	r.Use(cors.New(config))
 
 }
 
