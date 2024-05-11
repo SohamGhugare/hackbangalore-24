@@ -1,0 +1,8 @@
+{
+  "compilerOptions": {
+    "paths": {
+      "@/*": ["./src/*"],
+      "@/app/investor/signup/page": ["./src/app/investor/signup/page.jsx"]
+    }
+  }
+}
