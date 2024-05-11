@@ -25,3 +25,20 @@ func CreateToken(email string, role string) (string, error) {
 
 	return tokenString, nil
 }
+
+// ParseToken parses the given token and returns the claims
+func ParseToken(tokenString string) (jwt.MapClaims, error) {
+	token, err := jwt.Parse(tokenString, func(token *jwt.Token) (interface{}, error) {
+		return secretKey, nil
+	})
+	if err != nil {
+		return nil, err
+	}
+
+	claims, ok := token.Claims.(jwt.MapClaims)
+	if !ok {
+		return nil, err
+	}
+
+	return claims, nil
+}
