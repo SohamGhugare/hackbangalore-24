@@ -53,3 +53,31 @@ func GetAllStartupsHandler(c *gin.Context) {
 		"startups": startups,
 	})
 }
+
+func AddActivityHandler(c *gin.Context) {
+	var activity models.ActivityAdd
+
+	err := c.Bind(&activity)
+
+	if err != nil {
+		c.JSON(400, gin.H{
+			"message": "Error occured while binding the request.",
+			"error":   err.Error(),
+		})
+		return
+	}
+
+	err = services.AddActivitySvc(activity)
+
+	if err != nil {
+		c.JSON(400, gin.H{
+			"message": "Error occured while adding activity to database.",
+			"error":   err.Error(),
+		})
+		return
+	}
+
+	c.JSON(200, gin.H{
+		"message": "Activity added successfully.",
+	})
+}

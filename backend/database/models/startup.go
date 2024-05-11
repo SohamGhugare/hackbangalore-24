@@ -30,9 +30,21 @@ type Startup struct {
 	Tags               map[string][]string `bson:"tags" json:"tags"`
 	Team               []TeamMember        `bson:"team" json:"team"`
 	Milestones         []Milestone         `bson:"milestones" json:"milestones"`
+	Activities         []Activity          `bson:"activities" json:"activities"`
 	Resources          Resources           `bson:"resources" json:"resources"`
 	Verified           bool                `bson:"verified" json:"verified"`
 	CreatedAt          time.Time           `bson:"created_at" json:"created_at"`
+}
+
+type ActivityAdd struct {
+	Name     string   `bson:"name" json:"name"`
+	Activity Activity `bson:"activity" json:"activity"`
+}
+
+type Activity struct {
+	Date        time.Time `bson:"date" json:"date"`
+	Description string    `bson:"description" json:"description"`
+	Type        string    `bson:"type" json:"type"`
 }
 
 type TeamMember struct {
@@ -66,6 +78,7 @@ func (Startup) New(startupSignup StartupSignup) (Startup, error) {
 		Team:               startupSignup.Team,
 		Milestones:         startupSignup.Milestones,
 		Resources:          startupSignup.Resources,
+		Activities:         []Activity{},
 		Verified:           false,
 		CreatedAt:          time.Now(),
 	}
@@ -74,6 +87,17 @@ func (Startup) New(startupSignup StartupSignup) (Startup, error) {
 	_, err := coll.InsertOne(context.TODO(), startup)
 
 	return startup, err
+}
+
+func (Startup) AddActivity(a ActivityAdd) error {
+	coll := database.DatabaseClient.Database("hackbangalore").Collection("startups")
+	_, err := coll.UpdateOne(context.TODO(), map[string]string{"name": a.Name}, map[string]interface{}{
+		"$push": map[string]interface{}{
+			"activities": a.Activity,
+		},
+	})
+
+	return err
 }
 
 func (Startup) GetAll() ([]Startup, error) {
