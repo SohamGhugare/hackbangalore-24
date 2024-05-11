@@ -22,6 +22,7 @@ func init() {
 func setupRoutes(r *gin.Engine) {
 	// INVESTORS
 	r.POST("api/v1/investor/signup", handlers.InvestorSignupHandler)
+	r.POST("api/v1/investor/login", handlers.InvestorLoginHandler)
 
 }
 
