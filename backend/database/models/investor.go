@@ -2,6 +2,7 @@ package models
 
 import (
 	"context"
+	"errors"
 	"time"
 
 	"github.com/SohamGhugare/hackbangalore-24/database"
@@ -56,4 +57,21 @@ func (Investor) DoesExist(email string) bool {
 	res := coll.FindOne(context.TODO(), filter)
 
 	return res.Err() == nil
+}
+
+// Get method for InvestorLogin
+func (Investor) Get(email string) (Investor, error) {
+	var investor Investor
+
+	coll := database.DatabaseClient.Database("hackbangalore").Collection("investors")
+	filter := map[string]string{"email": email}
+	res := coll.FindOne(context.TODO(), filter)
+
+	if res.Err() != nil {
+		return Investor{}, errors.New("Invalid email")
+	}
+
+	err := res.Decode(&investor)
+
+	return investor, err
 }
