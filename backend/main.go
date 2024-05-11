@@ -28,7 +28,6 @@ func setupRoutes(r *gin.Engine) {
 	// CORS
 	config := cors.DefaultConfig()
   	config.AllowOrigins = []string{"http://127.0.0.1:3000"}
-   	r.Use(cors.New(config))
 
 }
 
@@ -37,11 +36,14 @@ func main() {
 	// creating gin engine
 	r := gin.Default()
 
+	r.Use(cors.Default())
+
+
 	// setting up routes
 	setupRoutes(r)
 
 	defer database.DatabaseClient.Disconnect(context.Background())
 
 	// running the server
-	r.Run("0.0.0.0:8080")
+	r.Run("127.0.0.1:8080")
 }

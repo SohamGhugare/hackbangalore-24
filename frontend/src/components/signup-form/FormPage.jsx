@@ -16,13 +16,16 @@ const FormPage = ({ currentPage, setCurrentPage, formData, setFormData }) => {
     />
   ));
   const sendData = async () => {
-    const response = await fetch(`${process.env.API_ENDPOINT}/investor/signup`, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
+    const response = await fetch(
+      `http://127.0.0.1:8080/api/v1/investor/signup`,
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
       },
-      body: JSON.stringify(formData),
-    });
+    );
     const data = await response.json();
     console.log(data);
   };
