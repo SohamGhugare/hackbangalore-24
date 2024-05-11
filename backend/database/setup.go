@@ -11,7 +11,7 @@ import (
 
 var DatabaseClient *mongo.Client
 
-func ConnectDB() *mongo.Client {
+func ConnectDB() {
 	uri := os.Getenv("MONGO_URI")
 	if uri == "" {
 		log.Fatal("Set your 'MONGO_URI' environment variable. ")
@@ -22,11 +22,6 @@ func ConnectDB() *mongo.Client {
 	if err != nil {
 		panic(err)
 	}
-	defer func() {
-		if err := client.Disconnect(context.TODO()); err != nil {
-			panic(err)
-		}
-	}()
 
 	DatabaseClient = client
 }
