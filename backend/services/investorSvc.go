@@ -10,12 +10,14 @@ import (
 // service for signing up an investor
 func InvestorSignupSvc(investorSignup models.InvestorSignup) (models.Investor, error) {
 
-	investor, err := models.Investor{}.New(investorSignup)
+	var investor models.Investor
 
 	// check if investor already exists
 	if investor.DoesExist(investorSignup.Email) {
 		return models.Investor{}, errors.New("Investor already exists")
 	}
+
+	investor, err := models.Investor{}.New(investorSignup)
 
 	if err != nil {
 		return models.Investor{}, err
