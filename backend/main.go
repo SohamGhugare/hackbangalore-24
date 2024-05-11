@@ -27,6 +27,7 @@ func setupRoutes(r *gin.Engine) {
 
 	// STARTUPS
 	r.POST("api/v1/startup/signup", handlers.StartupSignupHandler)
+	r.GET("api/v1/startups", handlers.GetAllStartupsHandler)
 
 	// CORS
 	config := cors.DefaultConfig()

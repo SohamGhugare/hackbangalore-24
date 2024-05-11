@@ -34,3 +34,22 @@ func StartupSignupHandler(c *gin.Context) {
 		"startup": startup,
 	})
 }
+
+func GetAllStartupsHandler(c *gin.Context) {
+	query := c.Query("filter")
+
+	startups, err := services.GetAllStartupsSvc(query)
+
+	if err != nil {
+		c.JSON(400, gin.H{
+			"message": "Error occured while fetching startups from database.",
+			"error":   err.Error(),
+		})
+		return
+	}
+
+	c.JSON(200, gin.H{
+		"message":  "Startups fetched successfully.",
+		"startups": startups,
+	})
+}
