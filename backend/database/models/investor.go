@@ -5,6 +5,7 @@ import (
 	"time"
 
 	"github.com/SohamGhugare/hackbangalore-24/database"
+	"github.com/SohamGhugare/hackbangalore-24/utils"
 )
 
 // InvestorSignup is the model for the investor signup request
@@ -26,10 +27,12 @@ type Investor struct {
 
 // new method for InvestorSignup
 func (Investor) New(investorSignup InvestorSignup) (Investor, error) {
+	hash, _ := utils.HashPassword(investorSignup.Password)
+
 	investor := Investor{
 		Name:      investorSignup.Name,
 		Email:     investorSignup.Email,
-		Password:  investorSignup.Password,
+		Password:  hash,
 		Tags:      investorSignup.Tags,
 		CreatedAt: time.Now(),
 	}
