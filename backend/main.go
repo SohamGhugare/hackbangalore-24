@@ -1,10 +1,12 @@
 package main
 
 import (
-	"net/http"
+	"context"
 
 	"github.com/SohamGhugare/hackbangalore-24/database"
+	"github.com/SohamGhugare/hackbangalore-24/handlers"
 	"github.com/SohamGhugare/hackbangalore-24/initializers"
+
 	"github.com/gin-gonic/gin"
 )
 
@@ -14,6 +16,13 @@ func init() {
 
 	// connecting to database
 	database.ConnectDB()
+
+}
+
+func setupRoutes(r *gin.Engine) {
+	// INVESTORS
+	r.POST("api/v1/investor/signup", handlers.InvestorSignupHandler)
+
 }
 
 func main() {
@@ -21,13 +30,11 @@ func main() {
 	// creating gin engine
 	r := gin.Default()
 
-	// test route
-	r.GET("/ping", func(c *gin.Context) {
-		c.JSON(http.StatusOK, gin.H{
-			"message": "Pong!",
-		})
-	})
+	// setting up routes
+	setupRoutes(r)
+
+	defer database.DatabaseClient.Disconnect(context.Background())
 
 	// running the server
-	r.Run()
+	r.Run("0.0.0.0:8080")
 }
