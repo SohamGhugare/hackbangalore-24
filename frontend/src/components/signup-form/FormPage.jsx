@@ -6,7 +6,6 @@ import Form from "./Form";
 import QuestionCard from "./QuestionCard";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import Loader from "../ui/Loader";
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 

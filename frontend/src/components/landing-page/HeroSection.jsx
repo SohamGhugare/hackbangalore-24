@@ -1,24 +1,24 @@
 import Link from "next/link";
-import Button from "../ui/Button";
 
 const HeroSection = () => {
   return (
-    <section className="flex flex-col items-center min-h-screen z-10">
-      <h1 className="text-6xl font-bold  mt-20 mb-5">Help us Make</h1>
-      <h1 className="text-6xl font-bold my-5 ">
-        <span className="bg-gradient-to-r from-[#FFF500] bg-clip-text text-transparent to-[#36C16D] text-shadow">
-          World
-        </span>{" "}
-        <span className="bg-gradient-to-l from-[#04C359] bg-clip-text text-transparent to-[#36C16D]">a Better Place</span>
-      </h1>
-      <p className="font">
-        We work for the betterment of society akjhdjas dahjsdha hruhwbd .
-        asdhgadgey dakhbshjd
-      </p>
-      <div className="my-10 flex gap-10">
-        <Link className="bg-primary-green py-2 px-6 rounded-lg text-white" href={"/"}>Explore</Link>
-        <Link className="bg-white py-2 px-6 rounded-lg text-black" href={"/"}>Become a member</Link>
+    <section className="flex items-center justify-center min-h-screen px-32">
+      <div className="w-full">
+        <h1 className="text-3xl md:text-5xl font-bold">Welcome to</h1>
+        <div className="relative">
+          {/* <div className="absolute h-6 w-1/3 bg-[#69d18dca]" /> */}
+          <h1 className="text-3xl md:text-5xl my-2 font-bold z-10">SustainX</h1>
+        </div>
+        <p>
+          Unleash the potential of blockchain to drive positive change and fuel
+          groundbreaking projects that shape a better tomorrow
+        </p>
+        <div className="flex justify-start gap-6 mt-4">
+          <Link className="bg-primary-green w-40 p-2 rounded-md text-center font-semibold" href={"/"}>I am an Investor</Link>
+          <Link className="bg-slate-300 w-40 p-2 rounded-md text-center font-semibold " href={"/"}>I run a Start Up</Link>
+        </div>
       </div>
+      <div className="w-full"></div>
     </section>
   );
 };

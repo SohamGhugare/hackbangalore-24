@@ -5,7 +5,7 @@ import React from "react";
 const StartupCard = ({ id, name, logo, industry, stage_of_development }) => {
   return (
     <Link
-      href={"/startup?id=" + id.toString()}
+      href={"/investor/startup?id=" + id.toString()}
       className="h-44 w-44 shadow-xl rounded-lg border border-black border-opacity-15 p-6 flex flex-col justify-center cursor-pointer hover:scale-105 transition-all"
     >
       <div className="h-10 w-10">

@@ -1,3 +1,4 @@
+"use client"
 const FormInput = ({ type, placeholder, value, onChange }) => {
   return (
     <div>
