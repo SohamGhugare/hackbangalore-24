@@ -1,6 +1,8 @@
 package handlers
 
 import (
+	"time"
+
 	"github.com/SohamGhugare/hackbangalore-24/database/models"
 	"github.com/SohamGhugare/hackbangalore-24/services"
 	"github.com/gin-gonic/gin"
@@ -62,6 +64,18 @@ func InvestorLoginHandler(c *gin.Context) {
 		})
 		return
 	}
+
+	token, err := services.CreateToken(investor.Email, "investor")
+
+	if err != nil {
+		c.JSON(400, gin.H{
+			"message": "Error occured while creating token.",
+			"error":   err.Error(),
+		})
+		return
+	}
+
+	c.SetCookie("token", token, int(time.Now().Add(time.Hour*24*7).Unix()), "", "", false, false)
 
 	c.JSON(200, gin.H{
 		"message":  "Investor logged in successfully.",
