@@ -75,3 +75,16 @@ func (Startup) New(startupSignup StartupSignup) (Startup, error) {
 
 	return startup, err
 }
+
+func (Startup) GetAll() ([]Startup, error) {
+	coll := database.DatabaseClient.Database("hackbangalore").Collection("startups")
+	cursor, err := coll.Find(context.TODO(), map[string]string{})
+	if err != nil {
+		return nil, err
+	}
+
+	startups := []Startup{}
+	cursor.All(context.Background(), &startups)
+
+	return startups, nil
+}
