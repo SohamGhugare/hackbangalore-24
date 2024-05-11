@@ -42,9 +42,9 @@ const Option = ({ text, questionData, formData }) => {
           }
         }
       }}
-      className={`border-2 ${
-        selected ? "border-green-500" : "border-black"
-      } rounded-md p-1 cursor-pointer`}
+      className={`border ${
+        selected ? "border-black" : "border-black"
+      } ${!selected ? "bg-transparent" : "bg-primary-lime"} rounded-md p-1 cursor-pointer`}
     >
       {text}
     </div>
@@ -62,11 +62,11 @@ const QuestionCard = ({ questionData, formData }) => {
     );
   });
   return (
-    <div className="border border-black w-96 text-center p-4">
+    <div className="shadow-lg bg-white rounded-lg w-96 text-center p-4">
       {questionData.type === "options" ? (
         <>
           {" "}
-          <h1 className="font-semibold leading-tight">{questionData.q}</h1>
+          <h1 className="font-semibold leading-tight my-2">{questionData.q}</h1>
           <div className="flex flex-col gap-2">{options}</div>
         </>
       ) : (

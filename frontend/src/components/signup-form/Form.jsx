@@ -2,6 +2,11 @@ import FormInput from "../ui/FormInput";
 import Label from "../ui/Label";
 
 const Form = ({ formData, setFormData }) => {
+  const handleEmailChange = (event) => {
+    if (isValidEmail(event.target.value)) {
+      setFormData({ ...formData, email: event.target.value });
+    }
+  };
   const handlePassChange = (event) => {
     setFormData({ ...formData, password: event.target.value });
   };
@@ -9,7 +14,7 @@ const Form = ({ formData, setFormData }) => {
     setFormData({ ...formData, cpass: event.target.value });
   };
   return (
-    <section className="flex flex-col items-center border border-black w-80 md:w-[50rem] rounded-lg m-auto p-10">
+    <section className="flex flex-col items-center bg-white shadow-lg w-80 mt-6 md:w-[40rem] rounded-lg m-auto p-10">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-2 md:gap-10">
         <div>
           <Label label={"Full Name"} htmlFor={"name"} />
@@ -28,9 +33,7 @@ const Form = ({ formData, setFormData }) => {
             type={"email"}
             id="email"
             value={formData.email}
-            onChange={(e) => {
-              setFormData({ ...formData, email: e.target.value });
-            }}
+            onChange={handleEmailChange}
           />
         </div>
       </div>
