@@ -50,3 +50,15 @@ func GetAllStartupsSvc(query string) ([]models.Startup, error) {
 	return res, nil
 
 }
+
+func AddActivitySvc(a models.ActivityAdd) error {
+
+	err := models.Startup{}.AddActivity(a)
+
+	if err != nil {
+		return err
+	}
+
+	return nil
+
+}
