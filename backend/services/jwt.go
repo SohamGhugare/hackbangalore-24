@@ -9,7 +9,8 @@ import (
 
 var secretKey = []byte(os.Getenv("JWT_SECRET_KEY"))
 
-func createToken(email string, role string) (string, error) {
+// CreateToken creates a JWT token with the given email and role
+func CreateToken(email string, role string) (string, error) {
 	token := jwt.NewWithClaims(jwt.SigningMethodHS256,
 		jwt.MapClaims{
 			"email": email,
