@@ -4,6 +4,7 @@ import mosin from "../../../public/founders/mosin.jpg";
 import arjun from "../../../public/founders/arjun.jpg";
 import Image from "next/image";
 import Timeline from "./Timeline";
+import { cn } from "@/lib/utils";
 const CompanyTabs = () => {
   const membersData = [
     {
@@ -48,11 +49,17 @@ const CompanyTabs = () => {
   });
   return (
     <div className="w-[80%] text-center m-auto">
-      <Tabs defaultValue="account" className="w-full">
+      <Tabs defaultValue="team" className="w-full">
         <TabsList className="w-full gap-20">
-          <TabsTrigger value="team">Team</TabsTrigger>
-          <TabsTrigger value="updates">Updates</TabsTrigger>
-          <TabsTrigger value="fundings">Fundings</TabsTrigger>
+          <TabsTrigger className={cn("text-xl")} value="team">
+            Team
+          </TabsTrigger>
+          <TabsTrigger className={cn("text-xl")} value="updates">
+            Updates
+          </TabsTrigger>
+          <TabsTrigger className={cn("text-xl")} value="fundings">
+            Fundings
+          </TabsTrigger>
         </TabsList>
         <TabsContent value="team">
           <div className="flex justify-center w-full gap-20 py-10">

@@ -10,29 +10,28 @@ const Page = () => {
         Startup Details
       </h1>
       <div className="flex w-full mt-10 gap-6">
-        <div className="w-full">
-          <iframe
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/6stlCkUDG_s?si=5RgS1rPIN4QM3wK1"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin"
-            allowfullscreen
-          ></iframe>
+        <div className="w-full flex items-center">
+          <video src="/pitch.mp4" autoPlay muted controls />
         </div>
         <div className="w-full flex flex-col gap-4">
           <div>
-            <h1 className="font-semibold text-base">Description</h1>
-            <p className="text-slate-600 text-sm">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
-              corrupti deleniti doloribus ab soluta illo a numquam voluptatem
-              totam quia.
+            <h1 className="font-semibold text-xl">Startup Name</h1>
+            <p className="text-slate-600 text-base">SustainX</p>
+          </div>
+          <div>
+            <h1 className="font-semibold text-xl">Description</h1>
+            <p className="text-slate-600 text-base">
+              SustainX connects impact investors with high-potential social
+              impact startups using advanced AI-driven matchmaking algorithms,
+              blockchain-powered tracking systems, and a dynamic platform to
+              streamline the entire journey. This enables capital to flow more
+              efficiently toward projects working on pressing challenges such as
+              sustainability, inclusion, and beyond - ultimately amplifying
+              positive social & environmental impact globally.
             </p>
           </div>
           <div>
-            <h1>Website</h1>
+            <h1 className="font-semibold text-xl">Website</h1>
             <Link className="text-blue-500 underline" href={"/"}>
               www.sustainx.com
             </Link>
@@ -52,8 +51,8 @@ const Page = () => {
             </div>
           </div>
           <div>
-            <h1 className="font-semibold text-base">Company Size</h1>
-            <p className="text-slate-600 text-sm">10-15 Employees</p>
+            <h1 className="font-semibold text-xl">Company Size</h1>
+            <p className="text-slate-600 text-base">10-15 Employees</p>
           </div>
         </div>
       </div>

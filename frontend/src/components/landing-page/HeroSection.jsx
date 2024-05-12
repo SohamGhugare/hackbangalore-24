@@ -9,24 +9,24 @@ const HeroSection = () => {
     <section className="relative flex items-center justify-center min-h-screen px-32 overflow-hidden">
       <motion.div
         initial={{
-          top: "-85rem",
-          right: "-90rem",
+          top: "-65rem",
+          right: "-70rem",
         }}
         animate={{
-          top: "-90rem",
-          right: "-70rem",
+          top: "-70rem",
+          right: "-50rem",
         }}
         transition={{ repeat: Infinity, duration: 5, repeatType: "reverse" }}
         className="flex absolute z-[0] h-[200vh] w-[200vh] bg-green-500 rounded-full top-[-85rem] right-[-90rem] blur-2xl opacity-35"
       />
       <motion.div
         initial={{
-          bottom: "-85rem",
-          left: "-90rem",
+          bottom: "-65rem",
+          left: "-70rem",
         }}
         animate={{
-          bottom: "-90rem",
-          left: "-70rem",
+          bottom: "-70rem",
+          left: "-50rem",
         }}
         transition={{
           repeat: Infinity,
@@ -81,8 +81,10 @@ const HeroSection = () => {
           }}
           transition={{ type: "spring", stiffness: 100, delay: 0.4 }}
         >
-          Unleash the potential of blockchain to drive positive change and fuel
-          groundbreaking projects that shape a better tomorrow
+          We connect impact investors with high-potential social impact startups
+          using advanced AI-driven matchmaking algorithms, blockchain-powered
+          tracking systems, and a dynamic platform to streamline the entire
+          journey!
         </motion.p>
         <motion.div
           initial={{
