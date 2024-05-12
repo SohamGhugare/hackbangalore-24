@@ -1,14 +1,9 @@
 "use client";
 
 import CompanyTabs from "@/components/startup-info/CompanyTabs";
-import Timeline from "@/components/startup-info/Timeline";
 import Link from "next/link";
-import { useSearchParams } from "next/navigation";
 import { FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
-const HighlightCard = ({ title, description }) => {};
-const page = () => {
-  const params = useSearchParams();
-  const startUpId = params.get("id");
+const Page = () => {
   return (
     <main className="pt-20 px-20 w-full m-auto min-h-screen">
       <h1 className="text-center text-6xl uppercase font-bold">
@@ -65,10 +60,10 @@ const page = () => {
       <h1 className="text-6xl my-10 text-center font-bold uppercase">
         Company Highlights
       </h1>
-  
+
       <CompanyTabs />
     </main>
   );
 };
 
-export default page;
+export default Page;
