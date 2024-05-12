@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 const HeroSection = () => {
@@ -18,7 +19,8 @@ const HeroSection = () => {
           <Link className="bg-slate-300 w-40 p-2 rounded-md text-center font-semibold " href={"/"}>I run a Start Up</Link>
         </div>
       </div>
-      <div className="w-full"></div>
+      <div className="w-full">
+      </div>
     </section>
   );
 };

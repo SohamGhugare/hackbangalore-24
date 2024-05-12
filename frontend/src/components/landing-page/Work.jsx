@@ -1,22 +1,27 @@
 const Work = () => {
-    const Card = ()=>{
-        return(
-            <div className="h-48 w-48 bg-gradient-to-r from-[#1DB954] to-[#002A02] to-90%"></div>
-        )
-    }
   return (
-    <section className="min-h-screen flex flex-col items-center">
-      <div className="relative my-10">
-        <h1 className="custom-stroke absolute text-8xl -top-1/2 text-center text-transparent left-[1rem]">WORK</h1>
-        <h1 className="text-5xl font-bold">How it Works?</h1>
+    <section className="flex justify-center gap-10 items-center px-20">
+      <div className="w-1/2 border-2 rounded-xl border-black flex justify-center flex-col p-4 h-36 text-center">
+        <h1 className="text-2xl font-bold text-center w-full tracking-wider">Connect{"   "} Invest{"   "} Transform</h1>
+        <p className="font-semibold text-center w-full">
+          The future of sustainable impact investing
+        </p>
       </div>
-      <p className="px-40 text-center">
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae
-        reiciendis neque quisquam ullam doloribus perferendis eos earum vel
-        animi cum?
-      </p>
-      <div>
-        <Card/>
+      <div className="w-1/4 h-36 flex flex-col gap-2 border-2 border-black rounded-xl overflow-hidden">
+        <div className="leading-tight bg-[#4fc885] font-bold text-lg p-2 flex justify-center items-center">
+          Join as Impact Investor
+        </div>
+        <p className="leading-tight p-2 text-center">
+          Unlock a world of personalised impact investment opportunities.
+        </p>
+      </div>
+      <div className="w-1/4 h-36 flex flex-col gap-2 border-2 border-black rounded-xl overflow-hidden">
+        <div className="leading-tight bg-[#4fc885] font-bold text-lg p-2 flex justify-center items-center">
+          List Your Project
+        </div>
+        <p className="leading-tight p-2 text-center">
+        Amplify your sustainable initiative's visibility to a global network of impact investors.
+        </p>
       </div>
     </section>
   );
