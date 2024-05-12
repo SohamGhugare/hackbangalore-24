@@ -14,7 +14,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={inter.className}>
         <Navbar />
-        <div className="bg-[#E5F7ED]">{children}</div>
+        <div className="bg-[#E5F7ED] font-Freeman">{children}</div>
       </body>
     </html>
   );

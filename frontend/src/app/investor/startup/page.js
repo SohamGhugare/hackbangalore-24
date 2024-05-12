@@ -10,7 +10,7 @@ const page = () => {
   const params = useSearchParams();
   const startUpId = params.get("id");
   return (
-    <main className="pt-20 px-20 w-full m-auto">
+    <main className="pt-20 px-20 w-full m-auto min-h-screen">
       <h1 className="text-center text-6xl uppercase font-bold">
         Startup Details
       </h1>
@@ -65,7 +65,7 @@ const page = () => {
       <h1 className="text-6xl my-10 text-center font-bold uppercase">
         Company Highlights
       </h1>
-      {/* <Timeline /> */}
+  
       <CompanyTabs />
     </main>
   );
