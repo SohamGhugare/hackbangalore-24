@@ -1,0 +1,739 @@
+{
+  "data": [
+    {
+      "name": "EduTech Innovators",
+      "email": "info@edutechinnovators.com",
+      "url": "https://www.edutechinnovators.com",
+      "industry": "Education",
+      "stage_of_development": "Pre-Seed",
+      "description": "EduTech Innovators is revolutionizing education through innovative technology solutions.",
+      "tags": {
+        "social_impact": "Education",
+        "environmental_impact": "Renewable Energy",
+        "stage": "Idea Phase",
+        "risk_tolerance": "2",
+        "investment_duration": "3"
+      }
+    },
+    {
+      "name": "HealthTech Solutions",
+      "email": "contact@healthtechsolutions.com",
+      "url": "https://www.healthtechsolutions.com",
+      "industry": "Medical",
+      "stage_of_development": "Seed",
+      "description": "HealthTech Solutions provides cutting-edge technology to improve healthcare outcomes.",
+      "tags": {
+        "social_impact": "Healthcare",
+        "environmental_impact": "Sustainable Agriculture",
+        "stage": "Prototype/MVP",
+        "risk_tolerance": "1",
+        "investment_duration": "1"
+      }
+    },
+    {
+      "name": "PovertyFighters",
+      "email": "info@povertyfighters.org",
+      "url": "https://www.povertyfighters.org",
+      "industry": "NGO",
+      "stage_of_development": "Series A",
+      "description": "PovertyFighters is dedicated to alleviating poverty through innovative and sustainable solutions.",
+      "tags": {
+        "social_impact": "Poverty Alleviation",
+        "environmental_impact": "Clean Technology",
+        "stage": "Early Stage",
+        "risk_tolerance": "3",
+        "investment_duration": "2"
+      }
+    },
+    {
+      "name": "GenderEquality Now",
+      "email": "contact@genderequalitynow.org",
+      "url": "https://www.genderequalitynow.org",
+      "industry": "Social",
+      "stage_of_development": "Series B",
+      "description": "GenderEquality Now works towards achieving gender equality and empowering women.",
+      "tags": {
+        "social_impact": "Gender Equality",
+        "environmental_impact": "Biodiversity Conservation",
+        "stage": "Growth Stage",
+        "risk_tolerance": "2",
+        "investment_duration": "3"
+      }
+    },
+    {
+      "name": "SocialJustice Advocates",
+      "email": "info@socialjusticeadvocates.org",
+      "url": "https://www.socialjusticeadvocates.org",
+      "industry": "NGO",
+      "stage_of_development": "Seed",
+      "description": "SocialJustice Advocates fights for social justice and equality for all.",
+      "tags": {
+        "social_impact": "Social Justice and Equality",
+        "environmental_impact": "Climate Change Mitigation and Adaptation",
+        "stage": "Mature Stage",
+        "risk_tolerance": "1",
+        "investment_duration": "1"
+      }
+    },
+    {
+      "name": "Community Builders",
+      "email": "contact@communitybuilders.org",
+      "url": "https://www.communitybuilders.org",
+      "industry": "Social",
+      "stage_of_development": "Pre-Seed",
+      "description": "Community Builders works to strengthen and develop local communities.",
+      "tags": {
+        "social_impact": "Community Development",
+        "environmental_impact": "Water and Sanitation",
+        "stage": "Idea Phase",
+        "risk_tolerance": "3",
+        "investment_duration": "2"
+      }
+    },
+    {
+      "name": "CircularEconomy Solutions",
+      "email": "info@circulareconomysolutions.com",
+      "url": "https://www.circulareconomysolutions.com",
+      "industry": "Education",
+      "stage_of_development": "Seed",
+      "description": "CircularEconomy Solutions promotes sustainable practices and circular economy principles.",
+      "tags": {
+        "social_impact": "Other",
+        "environmental_impact": "Circular Economy",
+        "stage": "Prototype/MVP",
+        "risk_tolerance": "2",
+        "investment_duration": "3"
+      }
+    },
+    {
+      "name": "RenewableEnergy Innovators",
+      "email": "contact@renewableenergyinnovators.com",
+      "url": "https://www.renewableenergyinnovators.com",
+      "industry": "Education",
+      "stage_of_development": "Series A",
+      "description": "RenewableEnergy Innovators develops innovative solutions for renewable energy.",
+      "tags": {
+        "social_impact": "Education",
+        "environmental_impact": "Renewable Energy",
+        "stage": "Early Stage",
+        "risk_tolerance": "1",
+        "investment_duration": "1"
+      }
+    },
+    {
+      "name": "SustainableAgriculture Co.",
+      "email": "info@sustainableagricultureco.com",
+      "url": "https://www.sustainableagricultureco.com",
+      "industry": "Medical",
+      "stage_of_development": "Series B",
+      "description": "SustainableAgriculture Co. promotes sustainable farming practices and agricultural innovation.",
+      "tags": {
+        "social_impact": "Healthcare",
+        "environmental_impact": "Sustainable Agriculture",
+        "stage": "Growth Stage",
+        "risk_tolerance": "3",
+        "investment_duration": "2"
+      }
+    },
+    {
+      "name": "CleanTech Ventures",
+      "email": "contact@cleantechventures.com",
+      "url": "https://www.cleantechventures.com",
+      "industry": "Education",
+      "stage_of_development": "Seed",
+      "description": "CleanTech Ventures invests in and supports clean technology startups.",
+      "tags": {
+        "social_impact": "Poverty Alleviation",
+        "environmental_impact": "Clean Technology",
+        "stage": "Mature Stage",
+        "risk_tolerance": "2",
+        "investment_duration": "3"
+      }
+    },
+    {
+      "name": "EduInnovate",
+      "email": "info@eduinnovate.org",
+      "url": "https://www.eduinnovate.org",
+      "industry": "Education",
+      "stage_of_development": "Pre-Seed",
+      "description": "EduInnovate brings innovative solutions to the education sector.",
+      "tags": {
+        "social_impact": "Education",
+        "environmental_impact": "Renewable Energy",
+        "stage": "Idea Phase",
+        "risk_tolerance": "3",
+        "investment_duration": "1"
+      }
+    },
+    {
+      "name": "HealthTech Pioneers",
+      "email": "contact@healthtechpioneers.com",
+      "url": "https://www.healthtechpioneers.com",
+      "industry": "Medical",
+      "stage_of_development": "Seed",
+      "description": "HealthTech Pioneers develops pioneering technology solutions for healthcare.",
+      "tags": {
+        "social_impact": "Healthcare",
+        "environmental_impact": "Sustainable Agriculture",
+        "stage": "Prototype/MVP",
+        "risk_tolerance": "2",
+        "investment_duration": "2"
+      }
+    },
+    {
+      "name": "PovertyEradication Initiative",
+      "email": "info@povertyeradication.org",
+      "url": "https://www.povertyeradication.org",
+      "industry": "NGO",
+      "stage_of_development": "Series A",
+      "description": "PovertyEradication Initiative works towards eradicating poverty through sustainable means.",
+      "tags": {
+        "social_impact": "Poverty Alleviation",
+        "environmental_impact": "Clean Technology",
+        "stage": "Early Stage",
+        "risk_tolerance": "1",
+        "investment_duration": "3"
+      }
+    },
+    {
+      "name": "GenderEquality Advocates",
+      "email": "contact@genderequalityadvocates.org",
+      "url": "https://www.genderequalityadvocates.org",
+      "industry": "Social",
+      "stage_of_development": "Series B",
+      "description": "GenderEquality Advocates promotes gender equality and women's empowerment.",
+      "tags": {
+        "social_impact": "Gender Equality",
+        "environmental_impact": "Biodiversity Conservation",
+        "stage": "Growth Stage",
+        "risk_tolerance": "3",
+        "investment_duration": "1"
+      }
+    },
+    {
+      "name": "SocialJustice Champions",
+      "email": "info@socialjusticechampions.org",
+      "url": "https://www.socialjusticechampions.org",
+      "industry": "NGO",
+      "stage_of_development": "Seed",
+      "description": "SocialJustice Champions fights for social justice and equality.",
+      "tags": {
+        "social_impact": "Social Justice and Equality",
+        "environmental_impact": "Climate Change Mitigation and Adaptation",
+        "stage": "Mature Stage",
+        "risk_tolerance": "2",
+        "investment_duration": "2"
+      }
+    },
+    {
+      "name": "CommunityEmpowerment Foundation",
+      "email": "contact@communityempowerment.org",
+      "url": "https://www.communityempowerment.org",
+      "industry": "Social",
+      "stage_of_development": "Pre-Seed",
+      "description": "CommunityEmpowerment Foundation works to empower local communities.",
+      "tags": {
+        "social_impact": "Community Development",
+        "environmental_impact": "Water and Sanitation",
+        "stage": "Idea Phase",
+        "risk_tolerance": "1",
+        "investment_duration": "3"
+      }
+    },
+    {
+      "name": "CircularEconomy Innovators",
+      "email": "info@circulareconomyinnovators.com",
+      "url": "https://www.circulareconomyinnovators.com",
+      "industry": "Education",
+      "stage_of_development": "Seed",
+      "description": "CircularEconomy Innovators develops innovative solutions for a circular economy.",
+      "tags": {
+        "social_impact": "Other",
+        "environmental_impact": "Circular Economy",
+        "stage": "Prototype/MVP",
+        "risk_tolerance": "3",
+        "investment_duration": "1"
+      }
+    },
+    {
+      "name": "RenewableEnergy Solutions",
+      "email": "contact@renewableenergysolutions.com",
+      "url": "https://www.renewableenergysolutions.com",
+      "industry": "Education",
+      "stage_of_development": "Series A",
+      "description": "RenewableEnergy Solutions provides innovative solutions for renewable energy.",
+      "tags": {
+        "social_impact": "Education",
+        "environmental_impact": "Renewable Energy",
+        "stage": "Early Stage",
+        "risk_tolerance": "2",
+        "investment_duration": "2"
+      }
+    },
+    {
+      "name": "SustainableAgriculture Innovators",
+      "email": "info@sustainableagricultureinnovators.com",
+      "url": "https://www.sustainableagricultureinnovators.com",
+      "industry": "Medical",
+      "stage_of_development": "Series B",
+      "description": "SustainableAgriculture Innovators develops innovative solutions for sustainable agriculture.",
+      "tags": {
+        "social_impact": "Healthcare",
+        "environmental_impact": "Sustainable Agriculture",
+        "stage": "Growth Stage",
+        "risk_tolerance": "1",
+        "investment_duration": "3"
+      }
+    },
+    {
+      "name": "CleanTech Pioneers",
+      "email": "contact@cleantechpioneers.com",
+      "url": "https://www.cleantechpioneers.com",
+      "industry": "Education",
+      "stage_of_development": "Seed",
+      "description": "CleanTech Pioneers develops pioneering clean technology solutions.",
+      "tags": {
+        "social_impact": "Poverty Alleviation",
+        "environmental_impact": "Clean Technology",
+        "stage": "Mature Stage",
+        "risk_tolerance": "3",
+        "investment_duration": "1"
+      }
+    },
+    {
+      "name": "HealthTech Innovators",
+      "email": "info@healthtechinnovators.com",
+      "url": "https://www.healthtechinnovators.com",
+      "industry": "Medical",
+      "stage_of_development": "Pre-Seed",
+      "description": "HealthTech Innovators develops innovative technology solutions for healthcare.",
+      "tags": {
+        "social_impact": "Healthcare",
+        "environmental_impact": "Clean Technology",
+        "stage": "Idea Phase",
+        "risk_tolerance": "2",
+        "investment_duration": "3"
+      }
+    },
+    {
+      "name": "PovertyAlleviation Foundation",
+      "email": "contact@povertyalleviationfoundation.org",
+      "url": "https://www.povertyalleviationfoundation.org",
+      "industry": "NGO",
+      "stage_of_development": "Seed",
+      "description": "PovertyAlleviation Foundation works towards alleviating poverty through innovative means.",
+      "tags": {
+        "social_impact": "Poverty Alleviation",
+        "environmental_impact": "Biodiversity Conservation",
+        "stage": "Prototype/MVP",
+        "risk_tolerance": "1",
+        "investment_duration": "1"
+      }
+    },
+    {
+      "name": "GenderEquality Champions",
+      "email": "info@genderequalitychampions.org",
+      "url": "https://www.genderequalitychampions.org",
+      "industry": "Social",
+      "stage_of_development": "Series A",
+      "description": "GenderEquality Champions promotes gender equality and women's empowerment.",
+      "tags": {
+        "social_impact": "Gender Equality",
+        "environmental_impact": "Climate Change Mitigation and Adaptation",
+        "stage": "Early Stage",
+        "risk_tolerance": "3",
+        "investment_duration": "2"
+      }
+    },
+    {
+      "name": "SocialJustice Innovators",
+      "email": "contact@socialjusticeinnovators.org",
+      "url": "https://www.socialjusticeinnovators.org",
+      "industry": "NGO",
+      "stage_of_development": "Series B",
+      "description": "SocialJustice Innovators develops innovative solutions for social justice and equality.",
+      "tags": {
+        "social_impact": "Social Justice and Equality",
+        "environmental_impact": "Water and Sanitation",
+        "stage": "Growth Stage",
+        "risk_tolerance": "2",
+        "investment_duration": "3"
+      }
+    },
+    {
+      "name": "CommunityDevelopment Initiative",
+      "email": "info@communitydevelopmentinitiative.org",
+      "url": "https://www.communitydevelopmentinitiative.org",
+      "industry": "Social",
+      "stage_of_development": "Seed",
+      "description": "CommunityDevelopment Initiative works to develop and empower local communities.",
+      "tags": {
+        "social_impact": "Community Development",
+        "environmental_impact": "Circular Economy",
+        "stage": "Mature Stage",
+        "risk_tolerance": "1",
+        "investment_duration": "1"
+      }
+    },
+    {
+      "name": "SustainableAgriculture Solutions",
+      "email": "info@sustainableagriculturesolutions.com",
+      "url": "https://www.sustainableagriculturesolutions.com",
+      "industry": "Education",
+      "stage_of_development": "Seed",
+      "description": "SustainableAgriculture Solutions provides solutions for sustainable agriculture practices.",
+      "tags": {
+        "social_impact": "Education",
+        "environmental_impact": "Sustainable Agriculture",
+        "stage": "Prototype/MVP",
+        "risk_tolerance": "2",
+        "investment_duration": "3"
+      }
+    },
+    {
+      "name": "CleanTech Innovators",
+      "email": "contact@cleantechinnovators.com",
+      "url": "https://www.cleantechinnovators.com",
+      "industry": "Medical",
+      "stage_of_development": "Series A",
+      "description": "CleanTech Innovators develops innovative clean technology solutions.",
+      "tags": {
+        "social_impact": "Healthcare",
+        "environmental_impact": "Clean Technology",
+        "stage": "Early Stage",
+        "risk_tolerance": "1",
+        "investment_duration": "1"
+      }
+    },
+    {
+      "name": "BiodiversityConservation Foundation",
+      "email": "info@biodiversityconservationfoundation.org",
+      "url": "https://www.biodiversityconservationfoundation.org",
+      "industry": "NGO",
+      "stage_of_development": "Series B",
+      "description": "BiodiversityConservation Foundation works towards conserving biodiversity.",
+      "tags": {
+        "social_impact": "Poverty Alleviation",
+        "environmental_impact": "Biodiversity Conservation",
+        "stage": "Growth Stage",
+        "risk_tolerance": "3",
+        "investment_duration": "2"
+      }
+    },
+    {
+      "name": "ClimateChange Mitigators",
+      "email": "contact@climatechangemitigators.org",
+      "url": "https://www.climatechangemitigators.org",
+      "industry": "Social",
+      "stage_of_development": "Seed",
+      "description": "ClimateChange Mitigators works towards mitigating the effects of climate change.",
+      "tags": {
+        "social_impact": "Gender Equality",
+        "environmental_impact": "Climate Change Mitigation and Adaptation",
+        "stage": "Mature Stage",
+        "risk_tolerance": "2",
+        "investment_duration": "3"
+      }
+    },
+    {
+      "name": "WaterSanitation Solutions",
+      "email": "info@watersanitationsolutions.org",
+      "url": "https://www.watersanitationsolutions.org",
+      "industry": "NGO",
+      "stage_of_development": "Pre-Seed",
+      "description": "WaterSanitation Solutions provides solutions for water and sanitation issues.",
+      "tags": {
+        "social_impact": "Social Justice and Equality",
+        "environmental_impact": "Water and Sanitation",
+        "stage": "Idea Phase",
+        "risk_tolerance": "1",
+        "investment_duration": "1"
+      }
+    },
+    {
+      "name": "CircularEconomy Pioneers",
+      "email": "contact@circulareconomypioneers.com",
+      "url": "https://www.circulareconomypioneers.com",
+      "industry": "Education",
+      "stage_of_development": "Seed",
+      "description": "CircularEconomy Pioneers develops pioneering solutions for a circular economy.",
+      "tags": {
+        "social_impact": "Community Development",
+        "environmental_impact": "Circular Economy",
+        "stage": "Prototype/MVP",
+        "risk_tolerance": "3",
+        "investment_duration": "2"
+      }
+    },
+    {
+      "name": "RenewableEnergy Champions",
+      "email": "info@renewableenergychampions.com",
+      "url": "https://www.renewableenergychampions.com",
+      "industry": "Education",
+      "stage_of_development": "Series A",
+      "description": "RenewableEnergy Champions promotes the adoption of renewable energy solutions.",
+      "tags": {
+        "social_impact": "Other",
+        "environmental_impact": "Renewable Energy",
+        "stage": "Early Stage",
+        "risk_tolerance": "2",
+        "investment_duration": "3"
+      }
+    },
+    {
+      "name": "SustainableAgriculture Pioneers",
+      "email": "contact@sustainableagriculturepioneers.com",
+      "url": "https://www.sustainableagriculturepioneers.com",
+      "industry": "Medical",
+      "stage_of_development": "Series B",
+      "description": "SustainableAgriculture Pioneers develops pioneering solutions for sustainable agriculture.",
+      "tags": {
+        "social_impact": "Education",
+        "environmental_impact": "Sustainable Agriculture",
+        "stage": "Growth Stage",
+        "risk_tolerance": "1",
+        "investment_duration": "1"
+      }
+    },
+    {
+      "name": "CleanTech Champions",
+      "email": "info@cleantechchampions.com",
+      "url": "https://www.cleantechchampions.com",
+      "industry": "Education",
+      "stage_of_development": "Seed",
+      "description": "CleanTech Champions promotes the adoption of clean technology solutions.",
+      "tags": {
+        "social_impact": "Healthcare",
+        "environmental_impact": "Clean Technology",
+        "stage": "Mature Stage",
+        "risk_tolerance": "3",
+        "investment_duration": "2"
+      }
+    },
+    {
+      "name": "BiodiversityConservation Innovators",
+      "email": "contact@biodiversityconservationinnovators.org",
+      "url": "https://www.biodiversityconservationinnovators.org",
+      "industry": "NGO",
+      "stage_of_development": "Pre-Seed",
+      "description": "BiodiversityConservation Innovators develops innovative solutions for biodiversity conservation.",
+      "tags": {
+        "social_impact": "Poverty Alleviation",
+        "environmental_impact": "Biodiversity Conservation",
+        "stage": "Idea Phase",
+        "risk_tolerance": "2",
+        "investment_duration": "3"
+      }
+    },
+    {
+      "name": "ClimateChange Adaptors",
+      "email": "info@climatechangeadaptors.org",
+      "url": "https://www.climatechangeadaptors.org",
+      "industry": "Social",
+      "stage_of_development": "Seed",
+      "description": "ClimateChange Adaptors develops solutions for adapting to climate change.",
+      "tags": {
+        "social_impact": "Gender Equality",
+        "environmental_impact": "Climate Change Mitigation and Adaptation",
+        "stage": "Prototype/MVP",
+        "risk_tolerance": "1",
+        "investment_duration": "1"
+      }
+    },
+    {
+      "name": "WaterSanitation Innovators",
+      "email": "contact@watersanitationinnovators.org",
+      "url": "https://www.watersanitationinnovators.org",
+      "industry": "NGO",
+      "stage_of_development": "Series A",
+      "description": "WaterSanitation Innovators develops innovative solutions for water and sanitation issues.",
+      "tags": {
+        "social_impact": "Social Justice and Equality",
+        "environmental_impact": "Water and Sanitation",
+        "stage": "Early Stage",
+        "risk_tolerance": "3",
+        "investment_duration": "2"
+      }
+    },
+    {
+      "name": "CircularEconomy Solutions",
+      "email": "info@circulareconomysolutions.com",
+      "url": "https://www.circulareconomysolutions.com",
+      "industry": "Education",
+      "stage_of_development": "Series B",
+      "description": "CircularEconomy Solutions provides solutions for implementing a circular economy.",
+      "tags": {
+        "social_impact": "Community Development",
+        "environmental_impact": "Circular Economy",
+        "stage": "Growth Stage",
+        "risk_tolerance": "2",
+        "investment_duration": "3"
+      }
+    },
+    {
+      "name": "RenewableEnergy Pioneers",
+      "email": "contact@renewableenergypioneers.com",
+      "url": "https://www.renewableenergypioneers.com",
+      "industry": "Education",
+      "stage_of_development": "Seed",
+      "description": "RenewableEnergy Pioneers develops pioneering solutions for renewable energy.",
+      "tags": {
+        "social_impact": "Other",
+        "environmental_impact": "Renewable Energy",
+        "stage": "Mature Stage",
+        "risk_tolerance": "1",
+        "investment_duration": "1"
+      }
+    },
+    {
+      "name": "SustainableAgriculture Champions",
+      "email": "info@sustainableagriculturechampions.com",
+      "url": "https://www.sustainableagriculturechampions.com",
+      "industry": "Education",
+      "stage_of_development": "Pre-Seed",
+      "description": "SustainableAgriculture Champions promotes the adoption of sustainable agriculture practices.",
+      "tags": {
+        "social_impact": "Education",
+        "environmental_impact": "Sustainable Agriculture",
+        "stage": "Idea Phase",
+        "risk_tolerance": "3",
+        "investment_duration": "2"
+      }
+    },
+    {
+      "name": "CleanTech Solutions",
+      "email": "contact@cleantechsolutions.com",
+      "url": "https://www.cleantechsolutions.com",
+      "industry": "Medical",
+      "stage_of_development": "Seed",
+      "description": "CleanTech Solutions provides solutions for implementing clean technology.",
+      "tags": {
+        "social_impact": "Healthcare",
+        "environmental_impact": "Clean Technology",
+        "stage": "Prototype/MVP",
+        "risk_tolerance": "2",
+        "investment_duration": "3"
+      }
+    },
+    {
+      "name": "BiodiversityConservation Champions",
+      "email": "info@biodiversityconservationchampions.org",
+      "url": "https://www.biodiversityconservationchampions.org",
+      "industry": "NGO",
+      "stage_of_development": "Series A",
+      "description": "BiodiversityConservation Champions promotes the conservation of biodiversity.",
+      "tags": {
+        "social_impact": "Poverty Alleviation",
+        "environmental_impact": "Biodiversity Conservation",
+        "stage": "Early Stage",
+        "risk_tolerance": "1",
+        "investment_duration": "1"
+      }
+    },
+    {
+      "name": "ClimateChange Solutions",
+      "email": "contact@climatechangesolutions.org",
+      "url": "https://www.climatechangesolutions.org",
+      "industry": "Social",
+      "stage_of_development": "Series B",
+      "description": "ClimateChange Solutions provides solutions for mitigating and adapting to climate change.",
+      "tags": {
+        "social_impact": "Gender Equality",
+        "environmental_impact": "Climate Change Mitigation and Adaptation",
+        "stage": "Growth Stage",
+        "risk_tolerance": "3",
+        "investment_duration": "2"
+      }
+    },
+    {
+      "name": "WaterSanitation Champions",
+      "email": "info@watersanitationchampions.org",
+      "url": "https://www.watersanitationchampions.org",
+      "industry": "NGO",
+      "stage_of_development": "Seed",
+      "description": "WaterSanitation Champions promotes solutions for water and sanitation issues.",
+      "tags": {
+        "social_impact": "Social Justice and Equality",
+        "environmental_impact": "Water and Sanitation",
+        "stage": "Mature Stage",
+        "risk_tolerance": "2",
+        "investment_duration": "3"
+      }
+    },
+    {
+      "name": "CircularEconomy Innovators",
+      "email": "contact@circulareconomyinnovators.com",
+      "url": "https://www.circulareconomyinnovators.com",
+      "industry": "Education",
+      "stage_of_development": "Pre-Seed",
+      "description": "CircularEconomy Innovators develops innovative solutions for a circular economy.",
+      "tags": {
+        "social_impact": "Community Development",
+        "environmental_impact": "Circular Economy",
+        "stage": "Idea Phase",
+        "risk_tolerance": "1",
+        "investment_duration": "1"
+      }
+    },
+    {
+      "name": "RenewableEnergy Solutions",
+      "email": "info@renewableenergysolutions.com",
+      "url": "https://www.renewableenergysolutions.com",
+      "industry": "Education",
+      "stage_of_development": "Seed",
+      "description": "RenewableEnergy Solutions provides solutions for implementing renewable energy.",
+      "tags": {
+        "social_impact": "Other",
+        "environmental_impact": "Renewable Energy",
+        "stage": "Prototype/MVP",
+        "risk_tolerance": "3",
+        "investment_duration": "2"
+      }
+    },
+    {
+      "name": "SustainableAgriculture Innovators",
+      "email": "contact@sustainableagricultureinnovators.com",
+      "url": "https://www.sustainableagricultureinnovators.com",
+      "industry": "Education",
+      "stage_of_development": "Series A",
+      "description": "SustainableAgriculture Innovators develops innovative solutions for sustainable agriculture.",
+      "tags": {
+        "social_impact": "Education",
+        "environmental_impact": "Sustainable Agriculture",
+        "stage": "Early Stage",
+        "risk_tolerance": "2",
+        "investment_duration": "3"
+      }
+    },
+    {
+      "name": "CleanTech Pioneers",
+      "email": "info@cleantechpioneers.com",
+      "url": "https://www.cleantechpioneers.com",
+      "industry": "Medical",
+      "stage_of_development": "Series B",
+      "description": "CleanTech Pioneers develops pioneering solutions for clean technology.",
+      "tags": {
+        "social_impact": "Healthcare",
+        "environmental_impact": "Clean Technology",
+        "stage": "Growth Stage",
+        "risk_tolerance": "1",
+        "investment_duration": "1"
+      }
+    },
+    {
+      "name": "BiodiversityConservation Solutions",
+      "email": "contact@biodiversityconservationsolutions.org",
+      "url": "https://www.biodiversityconservationsolutions.org",
+      "industry": "NGO",
+      "stage_of_development": "Seed",
+      "description": "BiodiversityConservation Solutions provides solutions for biodiversity conservation.",
+      "tags": {
+        "social_impact": "Poverty Alleviation",
+        "environmental_impact": "Biodiversity Conservation",
+        "stage": "Mature Stage",
+        "risk_tolerance": "3",
+        "investment_duration": "2"
+      }
+    }
+  ]
+}
