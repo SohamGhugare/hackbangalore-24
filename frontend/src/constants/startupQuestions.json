@@ -1,0 +1,233 @@
+[
+  [
+    {
+      "q": "Provide a brief overview of your project, its mission, and the problem it aims to solve. (200-300 words)",
+      "label": "Startup Description",
+      "o": [],
+      "type": "textarea"
+    }
+  ],
+  [
+    {
+      "q": "Social Impact",
+      "title": "Social Impact",
+      "o": [
+        "Education",
+        "Healthcare",
+        "Poverty Alleviation",
+        "Gender Equality",
+        "Social Justice and Equality",
+        "Community Development",
+        "Other"
+      ],
+      "type": "options"
+    },
+    {
+      "q": "Environmental Impact",
+      "title": "Environmental Impact",
+      "o": [
+        "Renewable Energy",
+        "Sustainable Agriculture",
+        "Clean Technology",
+        "Biodiversity Conservation",
+        "Climate Change Mitigation and Adaptation",
+        "Water and Sanitation",
+        "Circular Economy",
+        "Other"
+      ],
+      "type": "options"
+    }
+  ],
+  [
+    {
+      "q": "Total Funding Amount Sought:",
+      "title": "Total Funding Amount Sought",
+      "o": [""],
+      "type": "input"
+    },
+    {
+      "q": "Seed Round:",
+      "title": "Seed Round",
+      "o": [""],
+      "type": "input"
+    },
+    {
+      "q": "Series A:",
+      "title": "Series A",
+      "o": [""],
+      "type": "input"
+    },
+    {
+      "q": "Series B:",
+      "title": "Series B",
+      "o": [""],
+      "type": "input"
+    },  
+    {
+      "q": "Other:",
+      "title": "Other Funding Round",
+      "o": [""],
+      "type": "input"
+    }
+  ],
+  [
+    {
+      "q": "Provide information about your core team members",
+      "title": "Team Info",
+      "o": [],
+      "type": "title"
+    },
+    {
+      "q": "Team Member 1",
+      "title": "Team Member 1",
+      "o": [],
+      "type": "title"
+    },
+    {
+      "q": "Name:",
+      "title": "Name",
+      "o": [],
+      "type": "input"
+    },
+    {
+      "q": "Role:",
+      "title": "Role",
+      "o": [],
+      "type": "input"
+    },
+    {
+      "q": "Bio:",
+      "title": "Bio",
+      "o": [],
+      "type": "textarea"
+    },
+    {
+      "q": "LinkedIn URL:",
+      "title": "LinkedIn URL",
+      "o": [],
+      "type": "input"
+    },
+    {
+      "q": "Team Member 2",
+      "title": "Team Member 2",
+      "o": [],
+      "type": "title"
+    },
+    {
+      "q": "Name:",
+      "title": "Name",
+      "o": [],
+      "type": "input"
+    },
+    {
+      "q": "Role:",
+      "title": "Role",
+      "o": [],
+      "type": "input"
+    },
+    {
+      "q": "Bio:",
+      "title": "Bio",
+      "o": [],
+      "type": "textarea"
+    },
+    {
+      "q": "LinkedIn URL:",
+      "title": "LinkedIn URL",
+      "o": [],
+      "type": "input"
+    },
+    {
+      "q": "Team Member 3",
+      "title": "Team Member 3",
+      "o": [],
+      "type": "title"
+    },
+    {
+      "q": "Name:",
+      "title": "Name",
+      "o": [],
+      "type": "input"
+    },
+    {
+      "q": "Role:",
+      "title": "Role",
+      "o": [],
+      "type": "input"
+    },
+    {
+      "q": "Bio:",
+      "title": "Bio",
+      "o": [],
+      "type": "textarea"
+    },
+    {
+      "q": "LinkedIn URL:",
+      "title": "LinkedIn URL",
+      "o": [],
+      "type": "input"
+    }
+  ],
+  [
+    {
+      "q": "Outline your project's roadmap and key milestones:",
+      "title": "Roadmap and Milestones",
+      "o": [],
+      "type": "title"
+    },
+    {
+      "q": "Milestone 1",
+      "title": "Milestone 1",
+      "o": [],
+      "type": "title"
+    },
+    {
+      "q": "Description:",
+      "title": "Description",
+      "o": [],
+      "type": "textarea"
+    },
+    {
+      "q": "Target Date:",
+      "title": "Target Date",
+      "o": [],
+      "type": "input"
+    },
+    {
+      "q": "Milestone 2",
+      "title": "Milestone 2",
+      "o": [],
+      "type": "title"
+    },
+    {
+      "q": "Description:",
+      "title": "Description",
+      "o": [],
+      "type": "textarea"
+    },
+    {
+      "q": "Target Date:",
+      "title": "Target Date",
+      "o": [],
+      "type": "input"
+    },
+    {
+      "q": "Milestone 3",
+      "title": "Milestone 3",
+      "o": [],
+      "type": "title"
+    },
+    {
+      "q": "Description:",
+      "title": "Description",
+      "o": [],
+      "type": "textarea"
+    },
+    {
+      "q": "Target Date:",
+      "title": "Target Date",
+      "o": [],
+      "type": "input"
+    }
+  ]
+]

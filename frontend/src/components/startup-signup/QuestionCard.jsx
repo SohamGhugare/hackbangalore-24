@@ -10,7 +10,7 @@ const Option = ({ text, questionData, formData }) => {
   //         setSelected(true);
   //       }
   //     });
-  //   }  
+  //   }
   console.log(formData);
   return (
     <div
@@ -42,9 +42,9 @@ const Option = ({ text, questionData, formData }) => {
           }
         }
       }}
-      className={`border ${
-        selected ? "border-black" : "border-black"
-      } ${!selected ? "bg-transparent" : "bg-primary-green"} rounded-md p-1 cursor-pointer`}
+      className={`border ${selected ? "border-black" : "border-black"} ${
+        !selected ? "bg-transparent" : "bg-primary-green"
+      } rounded-md p-1 cursor-pointer`}
     >
       {text}
     </div>
@@ -63,16 +63,17 @@ const QuestionCard = ({ questionData, formData }) => {
   });
   return (
     <div className="shadow-lg border border-black border-opacity-10 bg-white rounded-lg w-96 text-center p-4 ">
-      {questionData.type === "options" ? (
+      {questionData.type === "options" && (
         <>
           {" "}
           <h1 className="font-semibold leading-tight my-2">{questionData.q}</h1>
           <div className="flex flex-col gap-2">{options}</div>
         </>
-      ) : (
+      )}
+      {questionData.type === "input" && (
         <div>
           <h1 className="font-semibold leading-tight">{questionData.q}</h1>
-          <Label htmlFor={"answer"} label={questionData.label}/>
+          <Label htmlFor={"answer"} label={questionData.label} />
           <FormInput
             type={"number"}
             onChange={(event) => {
@@ -104,6 +105,21 @@ const QuestionCard = ({ questionData, formData }) => {
             }}
           />
         </div>
+      )}
+      {questionData.type === "textarea" && (
+        <>
+          <Label htmlFor={"answer"} label={questionData.label} />
+          <textarea
+            onChange={() => {
+              formData.description = event.target.value;
+            }}
+            className="border mt-3"
+            rows={10}
+            cols={35}
+            name=""
+            id=""
+          ></textarea>
+        </>
       )}
     </div>
   );

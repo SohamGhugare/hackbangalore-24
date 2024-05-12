@@ -1,14 +1,24 @@
 "use client";
 import { useState } from "react";
-import FormPage from "@/components/signup-form/FormPage";
+import FormPage from "@/components/startup-signup/FormPage";
 
 const Page = () => {
   const [currentPage, setCurrentPage] = useState(0);
   const [formData, setFormData] = useState({
-    fullName: "",
+    name: "",
     email: "",
-    password: "",
-    cpass: "",
+    url: "",
+    stage_of_development: "",
+    description: "",
+    team:[{
+      id:"23",
+      name: "",
+      role: "",
+      linkedin: "",
+      bio: "",
+    }],
+    milestones:[],
+    resources:[],
     tags: [],
   });
   return (

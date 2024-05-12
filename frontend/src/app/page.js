@@ -1,11 +1,14 @@
-import Link from "next/link";
-
+import HeroSection from "@/components/landing-page/HeroSection";
+import Image from "next/image";
+import circles from "../../public/landing-page/circles.png";
+import Work from "@/components/landing-page/Work";
+import Why from "@/components/landing-page/Why";
 export default function Home() {
   return (
-    <main>
-      <Link href={"/investor/signup"}>
-        Sign up as investor
-      </Link>
+    <main className="bg-[#E5F7ED]">
+      <HeroSection />
+      <Work />
+      <Why/>
     </main>
   );
 }

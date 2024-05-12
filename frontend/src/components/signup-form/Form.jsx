@@ -9,7 +9,7 @@ const Form = ({ formData, setFormData }) => {
     setFormData({ ...formData, cpass: event.target.value });
   };
   return (
-    <section className="flex flex-col items-center border border-black w-80 md:w-[50rem] rounded-lg m-auto p-10">
+    <section className="flex flex-col items-center bg-white shadow-lg w-80 mt-6 md:w-[40rem] rounded-lg m-auto p-10">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-2 md:gap-10">
         <div>
           <Label label={"Full Name"} htmlFor={"name"} />
@@ -47,7 +47,7 @@ const Form = ({ formData, setFormData }) => {
         <div>
           <Label label={"Confirm Password"} htmlFor={"cpass"} />
           <FormInput
-            type={"passsword"}
+            type={"password"}
             id="cpass"
             value={formData.cpass}
             onChange={handleCPassChange}
