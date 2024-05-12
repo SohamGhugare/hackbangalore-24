@@ -16,7 +16,7 @@ const images = [
   "https://cdn.angellist.com/startups/i/4055695-c45adb3dfae48acf65ed20c325e4d167-thumb_jpg.jpg?buster=1536344232",
 ];
 
-const page = () => {
+const Page = () => {
   const [startups, setStartups] = useState(null);
   const [loading, setLoading] = useState(false);
   const getData = async () => {
@@ -65,4 +65,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

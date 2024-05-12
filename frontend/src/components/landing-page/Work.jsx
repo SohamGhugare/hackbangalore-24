@@ -20,7 +20,7 @@ const Work = () => {
           List Your Project
         </div>
         <p className="leading-tight p-2 text-center">
-        Amplify your sustainable initiative's visibility to a global network of impact investors.
+        Amplify your sustainable initiative&apos;s visibility to a global network of impact investors.
         </p>
       </div>
     </section>

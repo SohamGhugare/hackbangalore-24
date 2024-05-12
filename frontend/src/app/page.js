@@ -7,8 +7,8 @@ export default function Home() {
   return (
     <main className="bg-[#E5F7ED]">
       <HeroSection />
-      <Work />
-      <Why/>
+      {/* <Work />
+      <Why/> */}
     </main>
   );
 }

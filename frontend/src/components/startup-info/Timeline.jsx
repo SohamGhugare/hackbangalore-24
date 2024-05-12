@@ -6,7 +6,7 @@ import "react-vertical-timeline-component/style.min.css";
 
 const Timeline = () => {
   return (
-    <div className="mb-10">
+    <div className="pb-10">
       <VerticalTimeline
         className="vertical-timeline-element--work"
         contentStyle={{
@@ -22,25 +22,22 @@ const Timeline = () => {
           className="vertical-timeline-element--work"
           contentStyle={{ background: "#e7e8ec", color: "#000000", borderRadius:"10px" }}
           contentArrowStyle={{ borderRight: "7px solid #e7e8ec" }}
-          date="2011 - present"
+          date="August 2023"
           iconStyle={{ background: "#e7e8ec", color: "#000000" }}
         >
-          <h1 className="text-4xl">lorem10</h1>
+          <h1 className="text-xl">Organized a free educaitonal workshop for young minds. </h1>
         </VerticalTimelineElement>
+       
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
-          contentStyle={{ background: "rgb(33, 150, 243)", color: "#000000" }}
-          contentArrowStyle={{ borderRight: "7px solid  rgb(33, 150, 243)" }}
-          date="2011 - present"
-          iconStyle={{ background: "rgb(33, 150, 243)", color: "#000000" }}
+          contentStyle={{ background: "#e7e8ec", color: "#000000", borderRadius:"10px" }}
+          contentArrowStyle={{ borderRight: "7px solid #e7e8ec" }}
+          date="November 2023"
+          iconStyle={{ background: "#e7e8ec", color: "#000000" }}
         >
-          <h3 className="vertical-timeline-element-title">Creative Director</h3>
-          <h4 className="vertical-timeline-element-subtitle">Miami, FL</h4>
-          <p>
-            Creative Direction, User Experience, Visual Design, Project
-            Management, Team Leading
-          </p>
+          <h1 className="text-xl">Distributed clothes to needy on children&apos;s day</h1>
         </VerticalTimelineElement>
+       
       </VerticalTimeline>
     </div>
   );
