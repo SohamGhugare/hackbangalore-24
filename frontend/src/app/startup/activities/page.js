@@ -14,6 +14,7 @@ import {
   DialogHeader,
   DialogTitle,
   DialogTrigger,
+  DialogClose,
 } from "@/components/ui/dialog";
 
 import { useState } from "react";
@@ -31,7 +32,7 @@ const Page = () => {
   ]);
   const [temp, setTemp] = useState({
     id: null,
-    title:"Activity " + (activities.length + 1),
+    title: "Activity " + (activities.length + 1),
     description: "",
     content: "",
     date: "",
@@ -64,9 +65,9 @@ const Page = () => {
         <p>
           At AgriSim, we&apos;re redefining the future of agriculture through
           cutting-edge technology and a deep commitment to the farming
-          community. Our platform is more than just an app; it&apos;s a comprehensive
-          solution that empowers farmers to make data-driven decisions and
-          achieve higher yields and sustainability.
+          community. Our platform is more than just an app; it&apos;s a
+          comprehensive solution that empowers farmers to make data-driven
+          decisions and achieve higher yields and sustainability.
         </p>
         <h1 className="font-semibold mt-10">Activities</h1>
         <Accordion type="single" collapsible>
@@ -115,17 +116,19 @@ const Page = () => {
                     }}
                   />
                   <div className="flex justify-end w-full">
-                    <button
-                      className="bg-green-700 text-white mt-4 py-2 px-6 rounded-lg"
-                      onClick={() => {
-                        setActivities([
-                          ...activities,
-                          { ...temp, id: activities.length },
-                        ]);
-                      }}
-                    >
-                      Add
-                    </button>
+                    <DialogClose asChild>
+                      <button
+                        className="bg-green-700 text-white mt-4 py-2 px-6 rounded-lg"
+                        onClick={() => {
+                          setActivities([
+                            ...activities,
+                            { ...temp, id: activities.length },
+                          ]);
+                        }}
+                      >
+                        Add
+                      </button>
+                    </DialogClose>
                   </div>
                 </div>
               </DialogDescription>
