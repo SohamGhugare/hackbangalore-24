@@ -9,27 +9,32 @@ const HeroSection = () => {
     <section className="relative flex items-center justify-center min-h-screen px-32 overflow-hidden">
       <motion.div
         initial={{
-          top: "-45rem",
-          right: "-40rem",
+          top: "-85rem",
+          right: "-90rem",
         }}
         animate={{
-          top: "-55rem",
-          right: "-40rem",
+          top: "-90rem",
+          right: "-70rem",
         }}
         transition={{ repeat: Infinity, duration: 5, repeatType: "reverse" }}
-        className="flex absolute z-[0] h-[200vh] w-[200vh] bg-green-500 rounded-full top-[-45rem] right-[-40rem] blur-2xl opacity-35"
+        className="flex absolute z-[0] h-[200vh] w-[200vh] bg-green-500 rounded-full top-[-85rem] right-[-90rem] blur-2xl opacity-35"
       />
       <motion.div
         initial={{
-          bottom: "-45rem",
-          left: "-40rem",
+          bottom: "-85rem",
+          left: "-90rem",
         }}
         animate={{
-          bottom: "-55rem",
-          left: "-40rem",
+          bottom: "-90rem",
+          left: "-70rem",
         }}
-        transition={{ repeat: Infinity, duration: 5, repeatType: "reverse", delay:"2.5" }}
-        className="flex absolute z-[0] h-[200vh] w-[200vh] bg-green-500 rounded-full bottom-[-45rem] left-[-40rem] blur-2xl opacity-35"
+        transition={{
+          repeat: Infinity,
+          duration: 5,
+          repeatType: "reverse",
+          delay: "2.5",
+        }}
+        className="flex absolute z-[0] h-[200vh] w-[200vh] bg-green-500 rounded-full bottom-[-85rem] left-[-90rem] blur-2xl opacity-35"
       />
 
       <div className="w-full z-[100]">
