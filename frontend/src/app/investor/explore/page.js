@@ -29,18 +29,16 @@ const page = () => {
         return response.json();
       })
       .then((data) => {
-        const cards = data.map((startup) => (
+        const cards = data?.startups.map((startup) => (
           <StartupCard
             key={startup._id}
-            id={startup._id}
+            id={startup.id}
             name={startup.name}
             logo={getRandomImage()}
             industry={startup.industry}
             stage_of_development={startup.stage_of_development}
           />
         ));
-        console.log("\n\n\n")
-        console.log(cards);
         setStartups(cards);
       })
       .catch((error) => {
@@ -55,9 +53,13 @@ const page = () => {
     <main className="min-h-screen pt-20">
       {loading && <Loader />}
       <h1 className="text-6xl font-bold text-center">Find Startups</h1>
-      <Filters />
+      <Filters
+        setLoading={setLoading}
+        startups={startups}
+        setStartups={setStartups}
+      />
       {startups && (
-        <div>{startups}</div>
+        <div className="flex flex-wrap justify-center gap-10">{startups}</div>
       )}
     </main>
   );
