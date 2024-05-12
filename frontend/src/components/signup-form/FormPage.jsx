@@ -93,7 +93,7 @@ const FormPage = ({ currentPage, setCurrentPage, formData, setFormData }) => {
     console.log(data);
   };
   return (
-    <main className="min-h-screen max-w-screen-lg m-auto flex flex-col items-center">
+    <main className="min-h-screen pt-20 max-w-screen-lg m-auto flex flex-col items-center">
       <ToastContainer />
       <div className="relative w-full">
         <div className="absolute h-6 w-1/3 top-1/3  bg-[#69d18dca] left-1/3 -z-10" />
