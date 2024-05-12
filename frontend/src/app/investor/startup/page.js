@@ -54,6 +54,17 @@ const Page = () => {
             <h1 className="font-semibold text-xl">Company Size</h1>
             <p className="text-slate-600 text-base">10-15 Employees</p>
           </div>
+          <div className="flex flex-wrap gap-5">
+            <button className="bg-primary-green py-1 px-4 text-white font-bold rounded-lg">
+              Wishlist
+            </button>
+            <button className="bg-primary-green py-1 px-4 text-white font-bold rounded-lg">
+              Schedule a Call
+            </button>
+            <button className="bg-primary-green py-1 px-4 text-white font-bold rounded-lg">
+              Chat with Founders
+            </button>
+          </div>
         </div>
       </div>
       <h1 className="text-6xl my-10 text-center font-bold uppercase">
