@@ -17,7 +17,7 @@ const images = [
   "https://cdn.angellist.com/startups/i/4055695-c45adb3dfae48acf65ed20c325e4d167-thumb_jpg.jpg?buster=1536344232",
 ];
 
-const page = () => {
+const Page = () => {
   const [startupsData, setStartupsData] = useState(null);
   const startups = [
     {
@@ -68,7 +68,7 @@ const page = () => {
                   key={random}
                   id={startupsData[random].id}
                   name={startupsData[random].name}
-                  logo={startupsData[random].logo}
+                  logo={getRandomImage()}
                   industry={startupsData[random].industry}
                   stage_of_development={
                     startupsData[random].stage_of_development
@@ -90,4 +90,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

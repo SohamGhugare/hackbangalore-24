@@ -8,7 +8,7 @@ const StartupCard = ({ id, name, logo, industry, stage_of_development }) => {
       href={"/investor/startup?id=" + id}
       className="h-56 w-56 shadow-xl rounded-lg border border-black border-opacity-15 p-6 flex flex-col justify-center cursor-pointer hover:scale-105 transition-all"
     >
-      <div className="h-10 w-10">
+      <div className="h-14 w-full flex justify-center">
         <img className="h-full w-auto" src={logo} />
       </div>
       <h1 className="mt-4 text-wrap">{name}</h1>
